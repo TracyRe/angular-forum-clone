@@ -1,0 +1,14 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.cats{
+  background-image: url('../../assets/forum.png');
+  @include size(100%, 60vh);
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  a{
+    position: relative;
+    top: 172px;
+    color: transparent;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.nav{
+  background-color: #4D4D4D;
+  background-image: url('../../assets/bg-nav.png');
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+  a{
+    color: transparent;
+  }
+}

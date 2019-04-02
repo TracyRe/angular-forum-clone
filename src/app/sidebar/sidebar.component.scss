@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.sidebar{
+  background-image: url('../../assets/sidebar.png');
+  background-repeat: no-repeat;
+  @include size(33%, 75vh);
+  position: absolute;
+  z-index: 1;
+  top: 215px;
+  right: 0;
+}

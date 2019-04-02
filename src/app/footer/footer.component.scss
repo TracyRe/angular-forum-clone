@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+
+.footerImg {
+  background-image: url("../../assets/footer.png");
+  background-position: top, center;
+  background-repeat: no-repeat;
+  @include size(100%,310px);
+  margin: 18vh auto 0 auto;
+  background-color: #f3f3f3;
+}
