@@ -1,1 +1,29 @@
-<a routerLink="/post">Post</a>
+<div class="breadcrumb">
+  <img src="../../assets/topic-breadcrumb-head.png" alt="">
+  <a routerLink="/topics">Anime</a>
+  <img src="../../assets/topic-breadcrumb-tail.png" alt="">
+</div>
+<div class="pagination">
+
+</div>
+<div class="post-list">
+  <a routerLink="/post">Post name</a>
+</div>
+
+<img src="../../assets/topic-pagination.png" alt="">
+
+<div class="current-topic">
+<b>Anime</b><a href="#"><img src="../../assets/btn-new-topic.png"></a>
+</div>
+<table>
+  <thead>
+      <td>Title</td>
+      <td>Replies</td>
+      <td>Topic Starter</td>
+  </thead>
+  <tr *ngFor="let post of posts" (click)="goToPost(post)">
+    <td>{{post.title}}</td>
+    <td>{{post.replyCount}}</td>
+    <td>{{post.author}}</td>
+  </tr>
+</table>

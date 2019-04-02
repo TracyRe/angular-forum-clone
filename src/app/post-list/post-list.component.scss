@@ -1,0 +1,45 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+body {
+  background: $bgpost;
+}
+
+.breadcrumb{
+  display: flex;
+  a{
+    color: white;
+    background-color: #F78C24;
+    text-decoration: none;
+  }
+}
+
+.current-topic {
+  background: $bgcurrenttopic;
+  @include size(900px, 26px);
+  padding: 4px;
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+table, tr, td {
+  background: $bgpage;
+  border: 1px solid $bgcurrenttopic;
+  border-collapse: collapse;
+
+}
+
+table {
+  width: 900px;
+}
+
+thead {
+  font-weight: bold;
+}
+td {
+  padding: 4px;
+}

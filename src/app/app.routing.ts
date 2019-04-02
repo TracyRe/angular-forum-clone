@@ -11,10 +11,10 @@ const appRoutes: Routes = [
    },
   {
     path: 'topics',
-    component: TopicsComponent,
+    component: TopicsComponent
   },
   {
-    path: 'post',
+    path: 'post/:id',
     component: PostComponent
   }
  ];
